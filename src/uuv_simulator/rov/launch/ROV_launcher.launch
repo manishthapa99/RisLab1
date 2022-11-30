@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<launch>
+    <!--Urdf find-->
+    <param name = "robot_description" command = "cat '$(find rov)/urdf/ROV.urdf'" />
+    
+    <!-- launching the world -->
+    <include file="$(find uuv_gazebo_worlds)/launch/empty_underwater_world.launch" />
+    <!--Spawn a robot-->
+    <node name = "spawn_rov" pkg = "gazebo_ros" type = "spawn_model" output = "screen"
+        args = "-urdf -param robot_description -model rov -y 1" />
+    <!-- rov_teleop_node initialized-->
+    <node pkg = "rov" type = "teleop_forces_torques_rov.py" name = "rov_teleop_node" />
+    <!-- rov thrusters initialized -->
+    <node pkg = "rov" type = "thrusters.py" name = "thrusters"/>
+</launch>

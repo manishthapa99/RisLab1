@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<launch>
+
+    <!-- to launch rov -->
+    <include file="$(find uuv_gazebo_worlds)/launch/empty_underwater_world.launch" />
+    <include file="$(find uuv_gazebo)/launch/rexrov_demos/rexrov_wrench_control.launch" />
+    
+    <!-- teleop_twist_keyboard.py is used to controll the rov  -->
+    <node pkg = "rov" type = "teleop_forces_torques.py" name = "teleop_forces_torques"/>
+
+
+</launch>

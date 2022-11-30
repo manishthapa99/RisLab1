@@ -1,0 +1,423 @@
+<?xml version="1.0" ?>
+<robot name="ROV">
+
+<material name="black">
+	<color rgba="0 0 0 1"/>
+</material>
+
+<material name="blue">
+	<color rgba="0 0 1 1"/>
+</material>
+
+    <link name="base_link" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+            <sphere radius="0.3"/>
+            
+            </geometry>
+            
+
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0" />
+            <geometry>
+            <sphere radius="0.3"/>
+            </geometry>
+            <material name="black"/>
+        </collision>
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+
+    </link>
+
+    <link name="link2" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+            <geometry>
+            <box size="0.5 0.3 0.5"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+            <geometry>
+            <box size="0.5 0.3 0.5"/>
+            </geometry>
+            <material name="black"/>
+        </collision>
+
+
+    </link>
+
+    
+    <link name="link3" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+            <geometry>
+            <box size="0.5 0.3 0.5"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.3"/>
+            <geometry>
+            <box size="0.5 0.3 0.5"/>
+            </geometry>
+            <material name="black"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster0" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster1" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster2" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster3" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster4" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+    <link name="thruster5" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+
+
+    <link name="thruster6" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+
+    <link name="thruster7" >
+        <gravity>0</gravity>
+        <visual>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <inertial>
+            <mass value="0.00001"/>
+            <origin xyz="0 0 0"/>
+            <inertia ixx="0.1" ixy="1.44" ixz="0" iyy="0.1" iyz="2.6" izz="0.1"/>
+        </inertial>
+        <collision>
+            <origin rpy="0 1.57075 0" xyz="0 0 -0.5"/>
+            <geometry>
+            <cylinder length="0.1" radius="0.1"/>
+            </geometry>
+            <material name="blue"/>
+        </collision>
+
+        <neutrally_buoyant>0</neutrally_buoyant>
+        <volume>1000</volume>
+
+    </link>
+
+
+    <joint name="joint1" type="continuous">
+        <parent link="base_link"/>
+        <child link="link2"/>
+        <origin xyz="0 -0.22 0.25" rpy="0 0 0" />
+        <axis xyz="-0.9 0.15 0" />
+    </joint>
+
+    <joint name="joint2" type="continuous">
+        <parent link="base_link"/>
+        <child link="link3"/>
+        <origin xyz="0 0.22 0.25" rpy="0 0 0" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint0" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster0"/>
+        <origin xyz="0.15 0.22 0.15" rpy="0 0 -0.79" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint1" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster1"/>
+        <origin xyz="-0.15 0.22 0.15" rpy="0 0 0.79" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+    
+    <joint name="thruster_joint2" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster2"/>
+        <origin xyz="0.15 -0.22 0.15" rpy="0 0 0.79" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint3" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster3"/>
+        <origin xyz="-0.15 -0.22 0.15" rpy="0 0 -0.79" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint4" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster4"/>
+        <origin xyz="0.35 0.25 0.23" rpy="0 1.57 0" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint5" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster5"/>
+        <origin xyz="0.65 -0.25 0.23" rpy="0 1.57 0" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+    
+    <joint name="thruster_joint6" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster6"/>
+        <origin xyz="0.35 -0.25 0.23" rpy="0 1.57 0" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <joint name="thruster_joint7" type="continuous">
+        <parent link="base_link"/>
+        <child link="thruster7"/>
+        <origin xyz="0.65 0.25 0.23" rpy="0 1.57 0" />
+        <axis xyz="0.9 0.15 0" />
+    </joint>
+
+    <gazebo reference  = "thruster0">
+
+    </gazebo>
+    
+    <gazebo reference  = "thruster1">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster2">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster3">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster4">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster5">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster6">
+
+    </gazebo>
+
+    <gazebo reference  = "thruster7">
+
+    </gazebo>
+    
+
+    
+
+    
+
+ </robot>
